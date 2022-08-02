@@ -134,6 +134,15 @@ p {
     border-radius: 4px;
 }
 
+.navbar__toggle-btn{
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    font-size: 24px;
+    color: white;
+    display: none;
+}
+
 /* Home */
 #home {
     background: url("imgs/home-background.png") center/cover no-repeat;
@@ -383,47 +392,46 @@ p {
 }
 
 /* Testimonial */
-#testimonials{
+#testimonials {
     background-color: var(--color-light-white);
-}
-
-.testimonial{
-    margin:40px;
-}
-
-.testimonials{
+  }
+  
+  .testimonials {
+    margin: 40px;
+  }
+  
+  .testimonial {
     display: flex;
     margin: 32px 0;
-}
-
-.testimonial__avatar{
+  }
+  
+  .testimonial__avatar {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin: 12px;
-}
-
-.testimonials__avatar:nth-child(odd){
+  }
+  
+  .testimonial__avatar:nth-child(odd) {
     margin-right: 40px;
-}
-
-.testimonials__avatar:nth-child(even){
+  }
+  
+  .testimonial__avatar:nth-child(even) {
     margin-left: 40px;
-}
-
-.testimonial__speech-bubble{
+  }
+  
+  .testimonial__speech-bubble {
     padding: 18px;
     background-color: var(--color-white);
     border-radius: var(--size-border-radius);
-}
-
-.testimonial__speech-bubble p{
+  }
+  
+  .testimonial__speech-bubble p {
     color: var(--color-light-grey);
-}
-
-.testimonial__speech-bubble a{
+  }
+  
+  .testimonial__speech-bubble a {
     color: var(--color-pink);
-}
+  }
 
 /* contact */
 #contact{
@@ -449,4 +457,43 @@ p {
 .contact__links i:hover{
     transform: scale(1.1);
     color: var(--color-yellow);
+}
+
+/* For below 768px screen width */
+@media screen and (max-width: 768px)  {
+    .navbar__toggle-btn{
+    display: block;
+}
+}
+#navbar{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar__menu{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+
+.about__majors{
+    flex-direction: column;
+}
+
+.major{
+    margin-bottom: 38px;
+}
+
+.skillset{
+    flex-direction: column;
+}
+
+.project{
+    flex-grow: 1;
+}
+
+.testimonial__avatar{
+    width: 80px;
+    height: 80px;
 }
