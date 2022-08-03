@@ -100,12 +100,20 @@ p {
 }
 
 #navbar {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--color-pink);
     align-items: center;
     color: var(--color-white);
     padding: 16px;
+    background-color: transparent;
+    transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark{
+    background-color: var(--color-pink);
+    padding: 8px;
 }
 
 .navbar__menu {
@@ -115,6 +123,7 @@ p {
 .navbar__logo {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
+    color: white;
 }
 
 .navbar__menu__item {
@@ -147,6 +156,7 @@ p {
 #home {
     background: url("imgs/home-background.png") center/cover no-repeat;
     padding: 40px;
+    padding-top: 120px;
     text-align: center;
 }
 
@@ -464,7 +474,6 @@ p {
     .navbar__toggle-btn{
     display: block;
 }
-}
 #navbar{
     flex-direction: column;
     align-items: flex-start;
@@ -496,4 +505,5 @@ p {
 .testimonial__avatar{
     width: 80px;
     height: 80px;
+}
 }
