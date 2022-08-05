@@ -40,6 +40,7 @@
 /* Universal tags */
 * {
     box-sizing: border-box;
+    /* 테두리를 기준으로 크기를 정함 */
 }
 
 body {
@@ -112,7 +113,7 @@ p {
 }
 
 #navbar.navbar--dark{
-    background-color: var(--color-pink);
+    background-color: #bed297;
     padding: 8px;
 }
 
@@ -123,7 +124,7 @@ p {
 .navbar__logo {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
-    color: white;
+    color: var(--color-white);
 }
 
 .navbar__menu__item {
@@ -139,7 +140,7 @@ p {
 }
 
 .navbar__menu__item:hover {
-    background-color: var(--color-dark-white);
+    background-color: #b8d9c0;
     border-radius: 4px;
 }
 
@@ -148,13 +149,14 @@ p {
     top: 24px;
     right: 32px;
     font-size: 24px;
-    color: white;
+    color: var(--color-white);
     display: none;
 }
 
 /* Home */
 #home {
-    background: url("imgs/home-background.png") center/cover no-repeat;
+    /* background: url("imgs/home-background.png") center/cover no-repeat; */
+    background-color: #9db589;
     padding: 40px;
     padding-top: 120px;
     text-align: center;
@@ -186,7 +188,6 @@ p {
 .section {
     padding: 50px;
     text-align: center;
-
     margin: auto;
 }
 
@@ -208,8 +209,8 @@ p {
     line-height: 170px;
     font-size: 70px;
     margin: auto;
-    color: var(--color-blue);
-    border: 1px solid var(--color-blue);
+    color: #bed297;
+    border: 1px solid #bed297;
     border-radius: 50%;
     margin-bottom: 16px;
 }
@@ -219,7 +220,7 @@ p {
 }
 
 .major__icon:hover i {
-    color: var(--color-pink);
+    color: #9db589;
     transform: rotate(-30deg) scale(1.1);
 }
 
@@ -257,7 +258,7 @@ p {
 
 /* Skill */
 #skills {
-    background-color: var(--color-yellow);
+    background-color: #cee8ce;
 }
 
 .skillset {
@@ -292,7 +293,7 @@ p {
 
 .skill_value{
     height: 3px;
-    background-color: var(--color-yellow);
+    background-color: #cee8ce;
 }
 .skillset__right {
     flex-basis: 40%;
@@ -320,7 +321,7 @@ p {
 
 .Category__btn.active,
 .Category__btn:hover{
-    background-color: var(--color-pink);
+    background-color: #b8d9c0;
     color: var(--color-white);
 }
 
@@ -330,7 +331,7 @@ p {
     top: 0;
 }
 .category__count{
-    background-color:var(--color-orange) ;
+    background-color:#9db589 ;
     border-radius: 50%;
     color: var(--color-white);
     width: 24px;
@@ -403,7 +404,7 @@ p {
 
 /* Testimonial */
 #testimonials {
-    background-color: var(--color-light-white);
+    background-color: #ebefd6;
   }
   
   .testimonials {
@@ -440,12 +441,12 @@ p {
   }
   
   .testimonial__speech-bubble a {
-    color: var(--color-pink);
+    color: #9db589;
   }
 
 /* contact */
 #contact{
-    background-color: var(--color-pink);
+    background-color: #9db589;
 }
 
 .contact__title,
