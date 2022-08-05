@@ -29,3 +29,27 @@ href="#"을 쓰는 경우들:
 <input id="btnTop" type="button" onclick="window.scrollTo(0,0);" value="TOP">
 
 nav 태그 = navigator => 메뉴용
+
+fontawesome 사용하기 위해 개인 api
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+Toggle button
+창 줄였을 때 햄버거 버튼
+    <button class="navbar__toggle-btn">
+    <i class="fas fa-bars"></i>
+    </button>
+
+https://studiomeal.com/archives/197
+
+테두리를 기준으로 크기를 정함
+box-sizing: border-box;
+
+박스를 옆으로 늘림
+display: flex
+
+space-between
+아이템들의 “사이(between)”에 균일한 간격을 만들어 줍니다.
+
+배경색이 없습니다.
+background-color: transparent
+
