@@ -20,7 +20,16 @@ const link = target.dataset.link;
 if(link == null){
     return;
 }
-console.log(event.target.dataset.link);
-const scrollto = document.querySelector(link);
-scrollto.scrollIntoView({behavior:'smooth'});
+scrollIntoView(link);
 });
+
+// Handle click on "contact me" button on home
+const homecontactbtn = document.querySelector('.home__contact');
+homecontactbtn.addEventListener('click', () => {
+    scrollIntoView('#contact')
+})
+
+function scrollIntoView(selector){
+    const scrollto = document.querySelector(selector);
+    scrollto.scrollIntoView({behavior:'smooth'});
+}
