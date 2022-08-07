@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jun's Portfolio</title>
+    <meta name="description" content="Portfolio for world-renowned software enginner Jun">
+    <meta name="author" content="Jun">
+    <link rel="icon" type="image/png" href="imgs/favicon.png" />
+    <script src="https://kit.fontawesome.com/d6c54d32a3.js" crossorigin="anonymous"></script>
+    <!-- fontawesome 사용하기 위해 개인 api -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <i class="fa-solid fa-star"></i>
+            <a href="#">Jun</a>
+        </div>
+        
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item active" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                <li class="navbar__menu__item" data-link="#work">My work</li>
+                <li class="navbar__menu__item" data-link="#testimonials">Testimonials</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
+            </ul>
+        
+        <!-- Toggle button  -->
+        <!-- 창 줄였을 때 햄버거 버튼-->
+        <button class="navbar__toggle-btn" data-link="#contact">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+
+    <!-- Home -->
+    <Section id="home">
+        <div class="home__container">
+        <img src="imgs/이준상.jpg" alt="Jun's profile photo" class="home__avatar">
+        <h1 class="home__title">Hello <br />I'm Dream Coder</h1>
+        <h2 class="home__description">A Software Engineer currently residing in Toronto, Canada</h2>
+        <button class="home__contact">Contact Me</button>
+    </div>
+    </Section>
+
+    <!-- about -->
+    <section id="about" class="section section__container">
+
+        <h1>About me</h1>
+        <p>Motivated graduate with experience and education in Computer Software development. Having experience in
+            Software development with Object-oriented programming language, Web-based application, Database.
+            languages; English, Korean, Japanese
+        </p>
+        <div>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-brands fa-html5"></i>
+                </div>
+                <h2 class="major__title">Front-end</h2>
+                <div class="major__description">
+                    HTML, CSS, JavaScript, TypeScript,
+                    <br />React, Web APIs
+                </div>
+            </div>
+
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-brands fa-node"></i>
+                </div>
+                <h2 class="major__title">Back-end</h2>
+                <div class="major__description">
+                    Node JS
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="about__jobs">
+            <div class="job">
+            <img src="imgs/jobs/Job.png" alt="koko" class="job__logo" />
+            <div class="job__description">
+                <p class="job__name">KoKo Sharebar / Server, Bartender</p>
+                <p class="job__period">June 2021 - October 2021, Toronto</p>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="about__jobs">
+            <div class="job">
+            <img src="imgs/jobs/kinka.png" alt="kinka" class="job__logo" />
+            <div class="job__description">
+                <p class="job__name">Kinka Izakaya / Server, Bartender</p>
+                <p class="job__period">January 2020 - September 2021, Toronto</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="about__jobs">
+            <div class="job">
+            <img src="imgs/jobs/hbc.png" alt="hbc" class="job__logo" />
+            <div class="job__description">
+                <p class="job__name">Hudson’s bay company / Asset protection Investigator</p>
+                <p class="job__period">September 2019 - September 2020, Toronto</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="about__jobs">
+            <div class="job">
+            <img src="imgs/jobs/paragon.png" alt="paragon" class="job__logo" />
+            <div class="job__description">
+                <p class="job__name">Paragon / Security guard</p>
+                <p class="job__period">November 2018 - September 2019, Toronto</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="about__jobs">
+            <div class="job">
+            <img src="imgs/jobs/Tonyromas.png" alt="Tonyromas" class="job__logo" />
+            <div class="job__description">
+                <p class="job__name">Tony Roma’s / Cook</p>
+                <p class="job__period">November 2015 - July 2018, Winnipeg</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="about__jobs">
+            <div class="job">
+            <img src="imgs/jobs/Hollister.png" alt="Hollister" class="job__logo" />
+            <div class="job__description">
+                <p class="job__name">Hollister / Sales and stock associate</p>
+                <p class="job__period">July 2014 - July 2015, South Korea</p>
+            </div>
+        </div>
+        </div>
+
+        <div class="about__jobs">
+            <div class="job">
+            <img src="imgs/jobs/Job.png" alt="job" class="job__logo" />
+            <div class="job__description">
+                <p class="job__name">Sambo Company / Cad & Production control manager</p>
+                <p class="job__period">January 2013 - March 2014, South Korea</p>
+            </div>
+            </div>
+        </div>
+
+        <div class="about__jobs">
+            <div class="job">
+            <img src="imgs/jobs/ROKMC.png" alt="ROKMC" class="job__logo" />
+            <div class="job__description">
+                <p class="job__name">Ranger / Republic Of Korea Marine Corps</p>
+                <p class="job__period">November 2009 - August 2011, South Korea</p>
+            </div>
+        </div>
+        </div>
+        
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="section">
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Skills & Attributes</h2>
+            <p>
+                • Understand relational database and able to design and create database
+                schema<br>
+                • Exposed to version control tool such as git<br>
+                • Designed and implemented RESTful APIs for projects and able to use third party APIs<br>
+                • Enjoy resolving problems with computer programming and learning
+                from solutions<br>
+                • Excellent time management and flexible to switch between tasks based on priority<br>
+            </p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar"></div>
+                        <div class="skill_value" style="width: 90%"></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>Css</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill__bar"></div>
+                        <div class="skill_value" style="width: 85%"></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar"></div>
+                        <div class="skill_value" style="width: 80%"></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>TypeScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar"></div>
+                        <div class="skill_value" style="width: 80%"></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>React</span>
+                            <span>1%</span>
+                        </div>
+                        <div class="skill__bar"></div>
+                        <div class="skill_value" style="width: 1%"></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>Node.js</span>
+                            <span>1%</span>
+                        </div>
+                        <div class="skill__bar"></div>
+                        <div class="skill_value" style="width: 1%"></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>SQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar"></div>
+                        <div class="skill_value" style="width: 80%"></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>Python</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill__bar"></div>
+                        <div class="skill_value" style="width: 85%"></div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill_description">
+                            <span>Numpy</span>
+                            <span>1%</span>
+                        </div>
+                        <div class="skill__bar"></div>
+                        <div class="skill_value" style="width: 1%"></div>
+                    </div>
+                </div>
+
+                <div class="skillset__right">
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <div class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>X-code</span></li>
+
+                        </div>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- work -->
+    <section id="work" class="section">
+        <div class="section__container">
+            <h1>My work</h1>
+            <h3>Projects</h3>
+            <div class="work__categories">
+                <button class="Category__btn selected" data-filter="*">All<span class="category__count">1</span></button>
+                <button class="Category__btn" data-filter="front_end">Front_end<span class="category__count">1</span></button>
+                <button class="Category__btn" data-filter="back_end">Back_end<span class="category__count">0</span></button>
+            </div>
+
+            <div class="work__projects">
+                <a href="https://github.com/junslee57/" class="project" targer="blank" data-type="front_end">
+                    <img src="imgs/navbar.webp" alt="Github">
+                    <div class="project__description">
+                        <h3>Momentum</h3>
+                        <span>HTML, Css, JavaScript</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonials -->
+    <section id="testimonials" class="section">
+        <div class="section__container">
+            <h1>Testimonials</h1>
+            <h3>See what they say about me</h3>
+            <div class="testimonials">
+                <div class="testimonial">+
+                    <img src="imgs/testimonial/face.webp" alt="people" class="testimonial__avatar">
+                    <div class="testimonial__speech-bubble">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reprehenderit ab
+                            necessitatibus
+                            minus repellat eos itaque sunt et. Officiis autem beatae sit modi voluptates consectetur
+                            molestias
+                            reiciendis laboriosam omnis impedit.</p>
+                        <p class="name"><a href="">Jun</a>/ Hudson's</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">Let's talk</h1>
+        <h2 class="contact__email">junslee57@gmail.com</h2>
+        <div class="contact__links">
+            <a href="https://github.com/junslee57" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/junsang-lee-2173a7194/" target="_blank">
+                <i class="fa fa-linkedin-square"></i>
+            </a>
+        </div>
+        <p class="contact__rights">
+            2022 Jun - All rights reserved
+        </p>
+    </section>
+
+    <!-- Arrow up -->
+    <button class="arrow-up">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+</body>
+
+</html>
+
