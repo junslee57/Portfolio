@@ -146,9 +146,9 @@ p {
 
 .navbar__toggle-btn {
     position: absolute;
-    top: 24px;
-    right: 32px;
-    font-size: 24px;
+    top: 16px;
+    right: 16px;
+    font-size: var(--font-medium);
     color: var(--color-white);
     display: none;
 }
@@ -183,6 +183,10 @@ p {
     padding: 8px 12px;
     border: 2px solid var(--color-white);
     border-radius: var(--size-border-radius, 4px)
+}
+
+.home__contact:hover{
+    background-color: #b8d9c0;
 }
 
 /* section common */
@@ -324,6 +328,7 @@ p {
     border-radius: var(--size-border-radius, 4px);
     font-size: var(--font-regular);
     padding: 8px 48px;
+    position: relative;
 }
 
 .Category__btn.selected,
@@ -346,9 +351,9 @@ p {
     height: 24px;
     line-height: 24px;
     display: inline-block;
-    position: relative;
+    position: absolute;
     top: -20px;
-    left: 4px;
+    left: 16px;
     opacity: 0;
     transition: all var(--animation-duration);
 }
@@ -435,21 +440,24 @@ p {
     margin: 32px 0;
 }
 
+.testimonial{
+    flex-direction: column;
+    align-items: center;
+}
+
 .testimonial__avatar {
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
 
-.testimonial__avatar:nth-child(odd) {
-    margin-right: 40px;
-}
-
-.testimonial__avatar:nth-child(even) {
-    margin-left: 40px;
+.testimonial__avatar:nth-child(even), .testimonial__avatar:nth-child(odd){
+    margin: 0;
+    margin-bottom: 8px;
 }
 
 .testimonial__speech-bubble {
+    order: 1;
     padding: 18px;
     background-color: var(--color-white);
     border-radius: var(--size-border-radius);
@@ -492,11 +500,12 @@ p {
 /* Scroll */
 .arrow-up {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
-    width: 70px;
-    height: 70px;
-    font-size: 50px;
+    bottom: 16px;
+    right: 16px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
     color: var(--color-white);
     background-color: #bed297;
     border-radius: 50%;
@@ -512,6 +521,16 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+    
+    root{
+            /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+    }
+    
     .navbar__toggle-btn {
         display: block;
     }
@@ -537,18 +556,27 @@ p {
     display: block;
 }
 
+.section{
+    padding: 16px;
+    padding-top: 40;
+}
+
     .about__majors {
         flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 0px;
     }
 
     .major {
-        margin-bottom: 38px;
+        margin-bottom: 30px;
     }
 
     .skillset {
         flex-direction: column;
     }
-
+.Category__btn{
+    margin: 4px 0;
+}
     .project {
         flex-grow: 1;
     }
