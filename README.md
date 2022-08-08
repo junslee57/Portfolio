@@ -16,13 +16,18 @@
 
 *CSS
 
-box-sizing: border-box; *테두리를 기준으로 크기를 정함
+*box-sizing: border-box; 테두리를 기준으로 크기를 정함
 
-display: flex *박스를 옆으로 늘림 참조 사이트 https://studiomeal.com/archives/197
+*display: flex 박스를 옆으로 늘림 참조 사이트 https://studiomeal.com/archives/197
 
-아이템들의 “사이(between)”에 균일한 간격을 만들어 줍니다. *space-between
+*space-between 아이템들의 “사이(between)”에 균일한 간격을 만들어 줍니다. 
 
-background-color: transparent *배경색이 없습니다.
+*background-color: transparent 배경색이 없습니다.
+
+*z-index : 1; 제일 상위에 보여주기
+
+*ease-in/ease-out 천천-보통/보통-천천
+
 
 *JS
 
@@ -40,3 +45,8 @@ Document.querySelector()는 제공한 선택자 또는 선택자 뭉치와 일�
 *Element.getBoundingClientRect()
 Element.getBoundingClientRect() 메서드는 엘리먼트의 크기와 뷰포트에 상대적인 위치 정보를 제공하는 DOMRect 객체를 반환합니다.
 실제 보여지는 뷰포트 값을 반환
+
+*element.scrollIntoView
+Element 인터페이스의 scrollIntoView() 메소드는 scrollIntoView()가 호출 된 요소가 사용자에게 표시되도록 요소의 상위 컨테이너를 스크롤합니다.
+https://developer.mozilla.org/ko/docs/Web/API/Element/scrollIntoView
+
