@@ -25,3 +25,18 @@ display: flex *박스를 옆으로 늘림 참조 사이트 https://studiomeal.co
 background-color: transparent *배경색이 없습니다.
 
 *JS
+
+*Transparent navbar
+1. 스크롤링
+2. navbar 높이
+3. navbar 이상되면 색깔 어둡게 이하면 없애기
+
+* () =>
+스크롤 function 아무런 인자를 받지 않고 원하는 블럭을 실행
+
+*Document.querySelector()
+Document.querySelector()는 제공한 선택자 또는 선택자 뭉치와 일치하는 문서 내 첫 번째 Element를 반환합니다. 일치하는 요소가 없으면 null을 반환합니다.
+
+*Element.getBoundingClientRect()
+Element.getBoundingClientRect() 메서드는 엘리먼트의 크기와 뷰포트에 상대적인 위치 정보를 제공하는 DOMRect 객체를 반환합니다.
+실제 보여지는 뷰포트 값을 반환
